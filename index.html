@@ -1,60 +1,90 @@
-<!DOCTYPE html>
+]<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Germany Babyyy </title>
-    <style>
-        body{
-            background-color:rgb(73, 23, 23);
-            color:rgb(62, 89, 101);
+    <title>Travel Diary</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 
+    <style>
+        
+        * { box-sizing: border-box; }
+        body { 
+            margin: 0; 
+            font-family: 'Caveat', cursive; 
+            overflow-x: hidden;
+        }
+
+        
+        section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        /* 3. The "Glass" Box -  */
+        .content-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            width: 90%;        
+            max-width: 600px;  
+            family: 'Caveat', cursive;  
+        }
+
+        /* 4. Paris Section */
+        .parsi {
+            background-image: url('pars.png');
+            background-color: #9ec1db;
+        }
+
+        /* The Smooth Fade Transition */
+        .parsi::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(to bottom, transparent, rgba(27, 25, 25, 1));
+            pointer-events: none;
+        }
+
+        /* 5. Germany Section */
+        .start {
+            background-image: linear-gradient(to bottom, rgba(27, 25, 25, 0.5), rgba(69, 59, 59, 0.5)), url('berl.jpg');
+        }
+
+        .start-text {
+            transform: rotate(-3deg);
         }
     </style>
 </head>
 <body>
-   <section class=" parsi">
-    <div class="parsi-text">
-        <h1> NVM</h1> , <h2>It was supposed to be at last but it was the first pic in myy downloads , soo yeahh ( It is also a nicee destination, hehe)</h2>
-        <p> Scroll Down For Germanyy Babyyyyy</p>
-    </div>
 
-   </section>
+    <section class="parsi">
+        <div class="content-card">
+            <h1>NVM</h1>
+            <p>It was supposed to be at last but it was the first pic in myy downloads, soo yeahh (It is also a nicee destination, hehe)</p>
+            <strong>Scroll Down For Germanyy Babyyyyy</strong>
+        </div>
+    </section>
 
+    <section class="start">
+        <div class="content-card start-text">
+            <h1>Germany Babyyy, Now Lets Dive intoo My deluluuu guysss</h1>
+            <p>Welcome to the land of beer, bratwurst, and beautiful landscapes!</p>
+        </div>
+    </section>
 
 </body>
-<style>
-    body {
-        background-color: rgb(73, 23, 23);
-        color: rgb(62, 89, 101);
-    }
-
-    .parsi {
-    width: 100%;
-    height: 100vh;
-    background-image: url(p.avif);
-    
-    /*  showing the whole picture */
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: center;
-
-    /* Change 2: Matching the background color to the sky  cause it shoulddd naa , baaka */
-    background-color: #9ec1db; 
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-    .parsi-text {
-        /* Fix applied here below */
-        background-color: rgba(0, 0, 0, 0.7); 
-        color: white;
-        padding: 30px;
-        text-align: center;
-        border-radius: 15px;
-        max-width: 600px;
-    }
-</style>
 </html>
